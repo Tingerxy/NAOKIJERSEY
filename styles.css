@@ -118,12 +118,43 @@ footer {
 .services {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Ajouté pour les téléphones */
 }
 
 .service {
-    margin: 0 10px;
+    margin: 10px; /* Modifié pour les téléphones */
 }
 
 .service p {
     margin: 0;
+}
+
+/* Media queries pour les téléphones */
+@media (max-width: 768px) {
+    .onglets {
+        flex-direction: column;
+    }
+
+    .onglets a {
+        margin: 5px 0;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .card-details {
+        padding: 10px;
+    }
+
+    .card-details a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
 }
