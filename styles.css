@@ -1,0 +1,216 @@
+/* Reset des marges et des paddings */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/fond.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Optionnel : pour fixer l'image de fond */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+    background-color: white;
+    flex-wrap: wrap;
+    padding: 10px; /* Ajouté pour plus d'espace */
+}
+
+nav h1 {
+    color: #717171;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    margin-right: auto; /* Pour pousser les onglets à droite */
+}
+
+nav .onglets {
+    margin-left: auto; /* Pour pousser les onglets à droite */
+    display: flex;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('images/fond.jpg') center/cover;
+    color: #fff;
+    padding: 120px; /* Augmentation de la taille */
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+header h4 {
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin-bottom: 30px;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+}
+
+header img {
+    width: 80%; /* Ajustement de la taille de l'image */
+    max-width: 600px; /* Limitation de la largeur maximale de l'image */
+}
+
+.main {
+    margin-top: 20px; /* Ajustement pour les petits écrans */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largeur de la carte */
+    position: relative;
+}
+
+.left {
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.right img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-arrows .prev,
+.nav-arrows .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-arrows .prev:hover,
+.nav-arrows .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .model-image {
+    width: 100%;
+    height: auto;
+}
+
+.nav-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav-arrows .prev,
+.nav-arrows .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-arrows .prev:hover,
+.nav-arrows .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Pour que les cartes passent à la ligne si nécessaire */
+    justify-content: center; /* Pour aligner les cartes horizontalement au centre */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body, nav, header, .main, .main .content .card .left, footer {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('images/bleu.jpg');
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: white;
+    color: black;
+    padding: 30px 100px;
+}
+
+footer h1 {
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+footer .services {
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .services .service {
+    margin-right: 30px;
+}
+
+footer .services .service p {
+    max-width: 300px;
+}
+
+footer #contact {
+    color: white;
+}
